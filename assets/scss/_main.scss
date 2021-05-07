@@ -1,7 +1,7 @@
 .about {
   padding-top: 106px;
   padding-bottom: 70px;
-
+  background: $color-light;
 
   &__text {
     padding: 0 !important;
@@ -31,9 +31,7 @@
   }
 }
 
-
    .section-card {
-    background: $color-bg-light;
     padding: 77px 0 87px 0 !important;
 
     &__title {
@@ -76,7 +74,6 @@
     }
     .section-ihre{
       margin-top: 82px;
-      background: $color-bg-light;
 
       &__text{
         margin-bottom: 36px;
@@ -94,10 +91,21 @@
     }
     .hauptmerkmale{
       background: #FFFFFF;
-      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
       border-radius: 16px;
       margin-top: 50px;
       padding: 43px 52px 65px 52px;
+
+      &__item {
+        margin-bottom: $gap;
+      }
+      &__img{
+        margin-right: $gap;
+        font-size: 1rem;
+      }
+    }
+    .funtc{
+      padding: 80px 0 106px;
     }
 
 

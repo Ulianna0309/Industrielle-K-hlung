@@ -657,13 +657,14 @@ label {
 }
 
 body {
-  color: #000000;
+  color: #45494F;
   background-size: contain;
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;
   line-height: 2rem;
   font-size: 1rem;
   overflow-x: hidden;
+  background: #FBFBFC;
 }
 
 h1 {
@@ -720,6 +721,21 @@ a:hover, a:active {
   -webkit-transform: translateX(10px);
       -ms-transform: translateX(10px);
           transform: translateX(10px);
+}
+
+ol {
+  list-style-type: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .navbar {
@@ -1029,6 +1045,7 @@ a:hover, a:active {
 .about {
   padding-top: 106px;
   padding-bottom: 70px;
+  background: #ffffff;
 }
 
 .about__text {
@@ -1059,7 +1076,6 @@ a:hover, a:active {
 }
 
 .section-card {
-  background: #FBFBFC;
   padding: 77px 0 87px 0 !important;
 }
 
@@ -1112,7 +1128,6 @@ a:hover, a:active {
 
 .section-ihre {
   margin-top: 82px;
-  background: #FBFBFC;
 }
 
 .section-ihre__text {
@@ -1134,11 +1149,24 @@ a:hover, a:active {
 
 .hauptmerkmale {
   background: #FFFFFF;
-  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
   border-radius: 16px;
   margin-top: 50px;
   padding: 43px 52px 65px 52px;
+}
+
+.hauptmerkmale__item {
+  margin-bottom: 1.25rem;
+}
+
+.hauptmerkmale__img {
+  margin-right: 1.25rem;
+  font-size: 1rem;
+}
+
+.funtc {
+  padding: 80px 0 106px;
 }
 
 .benefits-container,
