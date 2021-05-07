@@ -740,6 +740,10 @@ ol {
 
 video {
   border-radius: 12px;
+  position: relative;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .navbar {
@@ -1077,6 +1081,7 @@ video {
 
 .about__accent {
   color: #1652AC;
+  font-weight: 600;
 }
 
 .section-card {
@@ -1171,6 +1176,49 @@ video {
 
 .funtc {
   padding: 80px 0 106px;
+}
+
+.funtc__overlay {
+  opacity: 0.8;
+  background-color: rgba(21, 21, 21, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  z-index: 4;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  border-radius: 16px;
+  -webkit-backdrop-filter: blur(19px);
+          backdrop-filter: blur(19px);
+}
+
+.funtc__items {
+  position: relative;
+}
+
+.die-block {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  padding: 48px 46px 80px 60px;
+}
+
+.die-block .section-ihre__text {
+  margin-bottom: 57px;
+}
+
+.die-block__text {
+  margin-top: 40px;
+  max-width: 426px;
+}
+
+.die-block .about__line {
+  margin-top: 32px;
+  margin-bottom: 52px;
 }
 
 .benefits-container,

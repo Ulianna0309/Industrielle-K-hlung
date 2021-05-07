@@ -28,6 +28,7 @@
 
   &__accent {
     color: $color-accent;
+    font-weight: 600;
   }
 }
 
@@ -108,7 +109,37 @@
       padding: 80px 0 106px;
 
       &__overlay{
-
+        opacity: 0.8;
+        background-color: rgba(21, 21, 21, 0.9);
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 10px;
+        width: 100%;
+        z-index: 4;
+        transition: .5s;
+        border-radius: 16px;
+        backdrop-filter: blur(19px);
+      }
+      &__items{
+       position: relative;
+      }
+    }
+    .die-block{
+      background: #FFFFFF;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 16px;
+      padding: 48px 46px 80px 60px;
+      & .section-ihre__text {
+        margin-bottom: 57px;
+      }
+      &__text{
+        margin-top: 40px;
+        max-width: 426px;
+      }
+      & .about__line{
+        margin-top: 32px;
+        margin-bottom: 52px;
       }
     }
 
