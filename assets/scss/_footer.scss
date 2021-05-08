@@ -1,8 +1,24 @@
-footer {
-  border-top: 1px solid rgba($color-light-grey, 0.3);
-  background-color: $color-light;
-  //padding-bottom: 55px;
+.footer{
+  padding: 73px 0 56px;
+  box-shadow: 0 1px 4px rgba(48, 67, 133, 0.5);
 
+  .footer__top{
+    border-bottom: 2px solid #EEF0F4;
+
+    &-title{
+      font-weight: bold;
+      font-size: 2.125rem;
+      line-height: 2.6875rem;
+      letter-spacing: -0.4px;
+      color: $color-accent;
+    }
+    .btn-primary{
+      margin-bottom: 78px;
+    }
+  }
+  &-bottom{
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 992px) {

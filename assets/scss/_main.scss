@@ -130,18 +130,173 @@
       box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
       border-radius: 16px;
       padding: 48px 46px 80px 60px;
+      margin-bottom: 93px;
       & .section-ihre__text {
         margin-bottom: 57px;
       }
       &__text{
         margin-top: 40px;
-        max-width: 426px;
       }
       & .about__line{
         margin-top: 32px;
         margin-bottom: 52px;
       }
     }
+    .fall{
+
+      &__tabs{
+        background: $color-light;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 16px;
+      }
+      .nav-tabs{
+        height: 65px;
+        background: #f6f7f9;
+      }
+      button, .nav-item, .nav-link, button:hover{
+        width: 33.3%;
+        display: flex;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 1.375rem;
+        line-height: 2em;
+        letter-spacing: -0.4px;
+        color: $color-tabs;
+        border: none;
+        border-radius: 16px 16px 0 0;
+      }
+      .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+        width: 100%;
+        font-weight: 600;
+        font-size: 1.375rem;
+        line-height: 2em;
+        letter-spacing: -0.4px;
+        border: none;
+      }
+      .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+        font-weight: 600;
+        font-size: 1.375rem;
+        line-height: 2em;
+        letter-spacing: -0.4px;
+        border: none;
+        border-bottom: 1px solid $color-tabs-bottom;
+        border-radius: 16px 16px 0 0;
+      }
+      &__title{
+        color: $color-tabs-title;
+        font-weight: bold;
+        font-size: 1.25rem;
+        line-height: 2.3rem;
+        letter-spacing: 2.42px;
+        margin-top: 52px;
+        margin-bottom: 47px;
+      }
+      .table-title{
+        border-bottom: 1px solid $color-tabs-td;
+      }
+      .table>:not(caption)>*>*{
+        border-right: 1px solid $color-tabs-td;
+        border-bottom: 1px solid $color-tabs-td;
+        padding-top: 40px;
+        padding-bottom: 5px;
+      }
+      .table-center{
+        padding-left: 122px !important;
+      }
+      .table-last{
+        padding-bottom: 67px !important;
+      }
+      .table-border{
+        border-top: 5px solid #F0F0F0;
+      }
+      .fall__pc{
+        color: #8B98A8;
+        margin-top: 24px;
+        margin-left: 60px;
+      }
+    }
+    .bilder{
+      padding: 50px 0 50px;
+
+      .carousel {
+        border-radius: 16px;
+        overflow: hidden;
+        img{
+          border-radius: 16px;
+        }
+      }
+
+      .carousel .carousel-indicators [data-bs-target]{
+        border-radius: 10px;
+        width: 12px;
+        height: 12px;
+        margin-right: 28px;
+        background: $color-indicators;
+        opacity: 0.35;
+        border: 1px solid #0045AC;
+      }
+      .carousel .carousel-indicators .active{
+        background: linear-gradient(180deg, #005BE4 0%, rgba(0, 96, 241, 0) 100%), #004FC7;
+      }
+
+      .carousel-control-prev,  .carousel-control-next {
+        width: 126px;
+        height: 78px;
+        color: rgba(0, 69, 203, 0.8);
+        box-shadow: 5px 5px 21px rgba(64, 68, 75, 0.14);
+        border-radius: 8px;
+        bottom: 0;
+      }
+      .carousel-control-next, .carousel-control-prev {
+        position: relative;
+        top: 95%;
+        bottom: 0 !important;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        color: #004FC7;
+        text-align: center;
+        border: 0;
+        opacity: .5;
+        transition: 0.3s;
+
+        :hover{
+          transform: scale(1.1);
+        }
+      }
+      .carousel-control-next{
+        left: 2%;
+      }
+      .carousel-indicators {
+        bottom: 30px;
+      }
+      .carousel-control-prev-icon ,.carousel-control-next-icon{
+        display: none;
+      }
+
+    }
+    .besucher{
+      padding: 26px 0 90px;
+
+      .btn-primary{
+        width: 100% !important;
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.21);
+        border-radius: 12px;
+        padding: 20px;
+        line-height: 40px;
+        letter-spacing: 1.42px;
+        color: #FAFBFE;
+        font-size: $font-size;
+        margin: 0 0 8px 0;
+      }
+    }
+
+
+
 
 
 
