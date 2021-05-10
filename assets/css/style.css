@@ -1143,6 +1143,13 @@ video {
     border: none;
     width: auto;
   }
+  .navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
+    padding: 0 20px;
+  }
+  .navbar-toggler:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
 }
 
 @media (max-width: 768px) {
