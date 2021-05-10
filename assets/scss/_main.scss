@@ -147,7 +147,6 @@
         border-radius: 16px;
       }
       .nav-tabs{
-        height: 65px;
         background: #f6f7f9;
       }
       button, .nav-item, .nav-link, button:hover{
@@ -327,6 +326,12 @@
     .section-card{
       padding: 48px 0;
     }
+    .carousel-btns{
+      display: none;
+    }
+    .mobile-btns{
+      margin: 0 auto;
+    }
   }
 
   @media (max-width: 768px) {
@@ -355,16 +360,13 @@
       padding-left: 20px;
     }
     .fall__title{
-      margin: 100px 0 28px;
+      margin: 28px 0 28px;
     }
     .fall button, .fall .nav-item, .fall .nav-link, .fall button:hover{
       width: 100%;
-      height: 50px;
       background: #F6F7F9;
     }
-    .fall .nav-tabs .nav-item.show .nav-link, .fall .nav-tabs .nav-link.active{
-      height: 50px;
-    }
+  
     .bilder .carousel-indicators{
       bottom: 0;
       position: relative;
@@ -376,9 +378,6 @@
     .besucher .btn-primary{
       width: 100% !important;
     }
-    .mobile-btns{
-      margin: 0 auto;
-    }
     .besucher{
       padding: 26px 0 65px;
     }
@@ -388,9 +387,6 @@
    .die-block{
      margin-bottom: 40px;
    }
-   .carousel-btns{
-     display: none;
-  }
   }
   @media(max-width: 540px){
     .section-blue{
@@ -420,6 +416,9 @@
   }
   .tab-content>.active{
     overflow-x: scroll;
+  }
+  .hauptmerkmale{
+    padding: 45px 15px 65px 15px;
   }
 }
 
