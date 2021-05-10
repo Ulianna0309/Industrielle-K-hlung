@@ -14,84 +14,62 @@
     }
     .btn-primary{
       margin-bottom: 78px;
+      background: linear-gradient(180deg, #0C5CD6 0%, rgba(0, 56, 140, 0) 100%), #004FC7;
+      border: 1px solid #FFFFFF;
+      box-sizing: border-box;
+      box-shadow: 0 1px 4px rgba(48, 67, 133, 0.5);
+      border-radius: 12px;
+      padding-right: 110px;
+    }
+    &-center{
+      margin-left: 75px;
     }
   }
   &-bottom{
     margin-top: 50px;
-  }
-}
 
-@media (max-width: 992px) {
-  footer {
-    //padding-bottom: 50px;
-  }
-}
-
-
-@media (max-width: 353px) {
-  footer {
-    //padding-bottom: 60px;
-  }
-}
-.footer {
-
-  &-nav {
-    border-top: 1px solid rgba($color-light-grey, 0.3);
-
-    &__title {
-      padding-bottom: 15px;
+    .footer-bottom__title{
+      font-weight: bold;
+      line-height: 2em;
+      letter-spacing: -0.4px;
+      color: $color-footer;
+      height: 27px;
     }
-    &__list {
-      list-style: none;
-      padding-left: 0;
-    }
-    &__link {
-      font-weight: 400;
-      color: $color-dark;
-    }
-  }
-  &-btn {
-    margin-bottom: 0.5vw;
-    border-radius: 10px;
-    border: none;
-    color: $color-light;
-    padding: 10px 3vw;
-    background-color: $color-primary;
-    transition: background-color 0.3s ease-out;
-
-    &:hover,
-    &:active {
+    &__text a{
+      line-height: 2em;
+      letter-spacing: -0.4px;
+      color: #9EABBB;
+      font-weight: normal;
       text-decoration: none;
-      background-color: $color-accent;
-      color: $color-light;
     }
   }
 }
 
-.fab{
-  color: rgba($color-light-grey, 0.5);
-  padding-right: 20px;
-  font-size: 2.5em;
-  transition: all 0.3s ease-out;
-
-  &:hover,
-  &:active {
-    color: $color-light-grey;
-    transform: scale(1.2);
+@media (max-width: 768px) {
+  .footer{
+    padding: 48px 0;
+  }
+  .footer .footer__top .btn-primary{
+    margin-bottom: 12px;
   }
 }
 
-.social {
 
-  &-menu-bottom {
-    padding: 2vw 12vw 0.5vw;
-    margin: 0 -12px;
-    border-top: 1px solid rgba($color-light-grey, 0.3);
-    border-bottom: 1px solid rgba($color-light-grey, 0.3);
-
-
-    &__item {
-      margin-left: 3vw;
+@media (max-width: 540px) {
+  .footer {
+   .footer__top .btn-primary {
+    width: 100% !important;
+    padding-right: 40%;
+  }
+  .footer__img{
+    display: none;
+  }
+  &-items{
+    width: 100%;
+    margin-bottom: 0;
+  }
+.mobile{
+  display: none;
     }
   }
 }

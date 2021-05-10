@@ -22,7 +22,7 @@
       <a class="navbar-brand" href="#">
         <img src="./assets/image/Logo.png" alt="Industrielle Kühlung" class="navbar__logo">
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
@@ -30,33 +30,32 @@
           <li class="nav-item">
             <a class="nav-link active" href="#">Über Uns</a>
           </li>
-          <li class="nav-item dropdown active">
-            <a class="nav-link dropdown-toggle" href="#" id="link-first" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Produkte
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Lorem</a>
-            </div>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Lorem</a></li>
+            </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="link-third" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Peripherietechnik
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Lorem</a>
-              <a class="dropdown-item" href="#">Lorem ipsum.</a>
-            </div>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Lorem</a></li>
+              <li><a class="dropdown-item" href="#">Lorem ipsum.</a></li>
+            </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="link-four" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dienstleistungen
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Lorem</a>
-              <a class="dropdown-item" href="#">Lorem ipsum.</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Lorem ipsum dolor.</a>
-            </div>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Lorem</a></li>
+              <li><a class="dropdown-item" href="#">Lorem ipsum.</a></li>
+              <li><a class="dropdown-item" href="#">Lorem ipsum dolor.</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Klimatechnik</a>
@@ -74,10 +73,13 @@
   </header>
   <main>
     <section class="about">
-      <div class="container d-flex">
-        <div class="col-lg-6 about__text">
+      <div class="container d-lg-flex d-md-block">
+        <div class="col-lg-6 col-sm-12 about__text">
           <h1 class="about__title">Industrielle Kühlung</h1>
           <div class="about__line"></div>
+          <div class="col-lg-6 col-sm-12 d-flex justify-content-center wow bounceIn" data-wow-duration="1s">
+            <img class="about-img__mobile d-lg-none"src="assets/image/frigel.svg" alt="frigel">
+          </div>
           <p class="about__paragraph"><strong>Seit Mitte 2017 ist die sogenannte 42. BImSchV <br> rechtsverbindlich.</strong></p>
           <p class="about__paragraph">Der Aufwand des Anlagenbetriebes von <br>
             Verdunstungskühlanlagen wird durch regelmäßige <br> Bakterienprüfungen und Instandhaltungsmaßnahmen <br> zeit- und kostenintensiv.</p>
@@ -85,8 +87,8 @@
             welches das Risiko von Legionellenwachstum <br> maßgeblich minimiert.
           </strong></p>
         </div>
-        <div class="col-lg-6 wow bounceIn" data-wow-duration="1s">
-          <img src="assets/image/frigel.svg" alt="frigel">
+        <div class="col-lg-6 col-sm-12 d-flex justify-content-center wow bounceIn" data-wow-duration="1s">
+          <img class="about-img d-lg-block d-sm-none d-md-block"src="assets/image/frigel.svg" alt="frigel">
         </div>
       </div>
     </section>
@@ -107,7 +109,7 @@
             <div class="card wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay="0.4s">
               <div class="card-body">
                 <h5 class="card-title text-center">70-80%</h5>
-                <p class="card-text text-center">verringerte Kosten für Instandhaltung <br>
+                <p class="card-text text-center">verringerte Kosten für Instandhaltung
                   und Personalaufwand
                 </p>
               </div>
@@ -139,7 +141,7 @@
       <div class="container">
         <h3 class="text-center">Bei Nutzung von Stadtwasser zur Kühlwassernachspeisung amortisiert <br>
           sich das System daher generell nach <span class="bold">3-5 Jahren.</span></h3>
-        <div class="section-blue__btn-block d-flex justify-content-between align-items-center">
+        <div class="section-blue__btn-block d-lg-flex d-md-flex justify-content-between align-items-center d-sm-block">
           <p class="section-blue__btn-text">Erfahren Sie mehr über den reduzierten 42. BImSchV Aufwand des <span class="bold">3DK Systems!</span></p>
           <a type="button" class="btn btn-primary text-right d-flex justify-content-between"><span class="arrow">🠒</span>Weitere Informationen</a>
         </div>
@@ -149,7 +151,7 @@
       <div class="container">
         <h2 class="section-ihre__text text-center">IHRE VORTEILE</h2>
         <div class="row">
-          <div class="col-sm-4 card-left">
+          <div class="col-lg-4 col-sm-6 card-left">
             <div class="card ihre-card wow fadeInDown">
               <div class="card-body ihre-body d-flex align-items-center">
                 <img class="img-card" src="assets/image/card1.svg" alt="card-1">
@@ -157,7 +159,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-4 card-center">
+          <div class="col-lg-4 col-sm-6 card-center">
             <div class="card ihre-card wow fadeInDown">
               <div class="card-body ihre-body d-flex align-items-center">
                 <img class="img-card" src="assets/image/card2.svg" alt="card-2">
@@ -165,7 +167,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-4 card-right">
+          <div class="col-lg-4 col-sm-6 card-right">
             <div class="card ihre-card wow fadeInDown">
               <div class="card-body ihre-body d-flex align-items-center">
                 <img class="img-card" src="assets/image/card3.svg" alt="card-3">
@@ -173,7 +175,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-4 card-left">
+          <div class="col-lg-4 col-sm-6 card-left">
             <div class="card ihre-card wow fadeInDown">
               <div class="card-body ihre-body d-flex align-items-center">
                 <img class="img-card" src="assets/image/card4.svg" alt="card-4">
@@ -181,7 +183,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-4 card-center">
+          <div class="col-lg-4 col-sm-6 card-center">
             <div class="card ihre-card wow fadeInDown">
               <div class="card-body ihre-body d-flex align-items-center">
                 <img class="img-card" src="assets/image/card5.svg" alt="card-5">
@@ -189,7 +191,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-4 card-right">
+          <div class="col-lg-4 col-sm-6 card-right">
             <div class="card ihre-card wow fadeInDown">
               <div class="card-body ihre-body d-flex align-items-center">
                 <img class="img-card" src="assets/image/card6.svg" alt="card-6">
@@ -197,7 +199,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-4 card-left">
+          <div class="col-lg-4 col-sm-6 card-left">
             <div class="card ihre-card wow fadeInDown">
               <div class="card-body ihre-body d-flex align-items-center">
                 <img class="img-card" src="assets/image/card7.svg" alt="card-7">
@@ -205,7 +207,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-4 card-center">
+          <div class="col-lg-4 col-sm-6 card-center">
             <div class="card ihre-card wow fadeInDown">
               <div class="card-body ihre-body d-flex align-items-center">
                 <img class="img-card" src="assets/image/card8.svg" alt="card-8">
@@ -213,7 +215,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-4 card-right">
+          <div class="col-lg-4 col-sm-6 card-right">
             <div class="card ihre-card wow fadeInDown">
               <div class="card-body ihre-body d-flex align-items-center">
                 <img class="img-card" src="assets/image/card9.svg" alt="card-9">
@@ -224,8 +226,8 @@
         </div>
         <div class="hauptmerkmale">
           <h2 class="section-ihre__text text-center">HAUPTMERKMALE</h2>
-          <div class="hauptmerkmale__list d-flex">
-            <div class="col-lg-6 d-flex justify-content-center align-items-stretch">
+          <div class="hauptmerkmale__list d-lg-flex">
+            <div class="col-lg-6 d-flex justify-content-center align-items-stretch col-sm-12">
               <ol>
                 <li class="hauptmerkmale__item">
                   <span class="hauptmerkmale__img">①</span>
@@ -259,7 +261,7 @@
                 </li>
               </ol>
             </div>
-            <div class="col-lg-6 d-flex justify-content-center align-items-stretch">
+            <div class="col-lg-6 d-flex justify-content-center align-items-stretch col-sm-12">
               <ol>
                 <li class="hauptmerkmale__item">
                   <span class="hauptmerkmale__img">⑦</span>
@@ -296,7 +298,7 @@
         <h2 class="section-ihre__text text-center">FUNKTIONSPRINZIP</h2>
         <div class="funtc__items">
           <div class="funtc__overlay"></div>
-          <video width="100%" height="670" controls="controls" poster="assets/image/youtube.png">
+          <video width="100%" height="100%" controls="controls" poster="assets/image/youtube.png">
             <source src="" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
             <a href="#"><img src="" alt="btn"></a>.
           </video>
@@ -307,18 +309,19 @@
       <div class="container">
         <div class="die-block">
           <h2 class="section-ihre__text text-left text-uppercase col-lg-6">Die adiabatische Kammer mit internationalem Patent</h2>
-          <div class="die-block__item d-flex">
-            <div class="col-lg-4">
+          <div class="die-block__item d-lg-flex">
+            <div class="col-lg-4 col-sm-12">
               <p class="die-block__text">Bei heißen Außentemperaturen schaltet das System automatisch in den sog. Adiabatikmodus. Unbehandeltes Wasser wird auf drei vorgelagerte Zellulosefilter gesprüht und kühlt die einziehende Luft auf Feuchtkugeltemperatur.</p>
               <p class="die-block__text">Somit garantiert der <span class="about__accent">3DK </span>auch an heißen Sommertagen  eine stabile, gleichbleibende Rücklauftemperatur. Kalkrückstände aus dem Sprühwasser lagern sich dank patentiertem Design nicht an den Wärmetauschern ab.</p>
               <div class="about__line"></div>
             </div>
-            <div class="col-lg-8 text-center wow bounceInDown" data-wow-duration="2s">
-              <img src="assets/image/die1.svg" alt="die">
+            <div class="col-lg-8 col-sm-12 text-center wow bounceInDown" data-wow-duration="2s">
+              <img class="die-img" src="assets/image/die1.svg" alt="die">
             </div>
           </div>
-          <div class="die-block__item d-flex">
-            <div class="col-lg-4">
+          <div class="die-block__item d-lg-flex">
+            <div class="col-lg-4 col-sm-12">
+              <p class="die-block__title accent bold">FUNKTION</p>
               <p class="die-block__text">Heiße Außenluft durchströmt die adiabate Kammer.</p>
               <div class="die-block__arrow text-center">
                 <img src="assets/image/arrow-down.svg" alt="arrow">
@@ -338,8 +341,8 @@
               </div>
               <p class="die-block__text"> Die Wasserspeisung der adiabaten Kammer erfolgt über eine separate Wasserquelle, z.B. eine Stadtwasserleitung.</p>
             </div>
-            <div class="col-lg-8 text-center">
-              <img src="assets/image/die2.svg" alt="die">
+            <div class="col-lg-8 col-sm-12 text-center">
+              <img class="die-img" src="assets/image/die2.svg" alt="die">
             </div>
           </div>
         </div>
@@ -347,7 +350,7 @@
     </section>
     <section class="fall">
       <div class="container">
-        <h2 class="section-ihre__text text-center">FALLBEISPIELE</h2>
+        <h2 class="section-ihre__text text-center d-lg-block d-md-none d-sm-none">FALLBEISPIELE</h2>
         <div class="fall__tabs">
           <ul class="nav nav-tabs d-flex justify-content-between" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
@@ -417,10 +420,12 @@
                   <td class="accent bold table-center">     Gesamtbetriebskosten</td>
                   <td class="accent bold">94.249 € / Jahr</td>
                   <td class="accent bold">47.461 € / Jahr</td>
+                  <td class="accent bold"></td>
                 </tr>
                 <tr>
                   <td class="accent bold table-center table-last">      Ersparnis</td>
                   <td class="text-success bold">= 46.788 € / Jahr</td>
+                  <td class="text-success bold"></td>
                 </tr>
                 </tbody>
               </table>
@@ -524,11 +529,6 @@
       <div class="container">
         <h2 class="section-ihre__text text-center">BILDER</h2>
         <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="assets/image/bilder-slider.png" class="d-block w-100" alt="bilder">
@@ -540,7 +540,12 @@
               <img src="assets/image/bilder-slider.png" class="d-block w-100" alt="bilder">
             </div>
           </div>
-          <div class="d-flex mt-5 mb-5">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="d-lg-flex mt-5 mb-5 carousel-btns">
           <button class="carousel-control-prev" type="button" data-bs-target="#carousel"  data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <img src="assets/image/arrow-left.svg" alt="left">
@@ -558,22 +563,22 @@
     <section class="besucher">
       <div class="container">
         <h2 class="section-ihre__text text-center">BESUCHER DIESER SEITE SUCHTEN AUCH OFT NACH:</h2>
-        <div class="besucher-btns d-flex">
-          <div class="col-lg-4">
+        <div class="besucher-btns d-lg-flex">
+          <div class="col-lg-4 col-sm-6 mobile-btns">
             <a href="#" type="button" class="btn btn-primary">CONTAINERSYSTEME</a>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-sm-6 mobile-btns">
             <a href="#" type="button" class="btn btn-primary">ROHRBAU</a>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-sm-6 mobile-btns">
             <a href="#" type="button" class="btn btn-primary">WASSERAUFBEREITUNG</a>
           </div>
         </div>
-        <div class="besucher-btns d-flex">
-          <div class="col-lg-4">
+        <div class="besucher-btns d-lg-flex">
+          <div class="col-lg-4 col-sm-6 mobile-btns">
             <a href="#" type="button" class="btn btn-primary">ROHRBAU</a>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-sm-6 mobile-btns">
             <a href="#" type="button" class="btn btn-primary">WASSERAUFBEREITUNG</a>
           </div>
         </div>
@@ -581,25 +586,32 @@
     </section>
     <footer class="footer">
         <div class="footer__top">
-          <div class="container d-flex">
-            <div class="col-lg-4">
-              <p class="footer__top-title">Jetzt Termin vereinbaren!</p>
+          <div class="container d-lg-flex">
+            <div class="d-lg-none col-sm-12">
+              <a href="#">
+                <img src="assets/image/Logo-footer.svg" alt="logo-footer">
+              </a>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-sm-12">
+              <p class="footer__top-title mt-5">Jetzt Termin vereinbaren!</p>
+            </div>
+            <div class="col-lg-4 col-sm-12 footer__top-center">
               <p>Gerne stehen wir Ihnen für eine individuelle Beratung telefonisch und vor Ort zur Verfügung und freuen
                 uns über Ihre Kontaktaufnahme. Sprechen Sie uns an!</p>
               <p>Fragen Sie nach einem Rückruf oder kontaktieren Sie uns unter: <span class="accent">info@elsasser-technik.de</span></p>
               </p>
               <a href="#" type="button" class="btn btn-primary d-flex justify-content-between"><span class="arrow">🠒</span>Kontakt</a>
             </div>
-            <div class="col-lg-4 text-center">
-              <img src="assets/image/Logo-footer.svg" alt="logo-footer">
+            <div class="footer__img col-lg-4 mt-5 d-lg-block text-center d-sm-none">
+              <a href="">
+                <img class="footer-img" src="assets/image/Logo-footer.svg" alt="logo-footer">
+              </a>
             </div>
           </div>
         </div>
         <div class="footer-bottom">
-          <div class="container d-flex">
-            <div class="col-lg-3">
+          <div class="container d-flex flex-wrap">
+            <div class="col-lg-4 col-sm-6 footer-items">
               <p class="footer-bottom__title">
                 Elsässer Kältetechnik
               </p>
@@ -607,559 +619,35 @@
                 <a href="https://goo.gl/maps/XNvJbYkRJZXbHozL9">Königsallee 14 <br> 40212 Düsseldorf</a>
               </p>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-4 col-sm-6 footer-items">
               <p class="footer-bottom__title">
                 Kontakt
               </p>
               <p class="footer-bottom__text">
-                <a href="tel: +49 (0) 211 9232 3052">Telefon: +49 (0) 211 9232 3052</a><br>
-                <a href="mailto: info@elsasser-technik.de">E-Mail: info@elsasser-technik.de</a>
+                <a href="tel: +49 (0) 211 9232 3052">Telefon: <span class="accent-black">+49 (0) 211 9232 3052</span></a><br>
+                <a href="mailto: info@elsasser-technik.de">E-Mail: <span class="accent">info@elsasser-technik.de</span></a>
               </p>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-2 col-sm-6 footer-items">
               <p class="footer-bottom__title">
                 Shortlinks
               </p>
-              <p class="footer-bottom__text">
-                <a href="">Kontakt</a><br>
-                <a href="">Rückruf vereinbaren</a>
+              <p class="footer-bottom__text footer-items">
+                <a href=""><u>Kontakt</u></a><br>
+                <a href=""><u>Rückruf vereinbaren</u></a>
               </p>
             </div>
-            <div class="col-lg-3">
-              <p class="footer-bottom__title">kjhkjhkj</p>
+            <div class="col-lg-2 col-sm-6">
+              <p class="footer-bottom__title mobile"></p>
               <p class="footer-bottom__text">
-                <a href="">Impressum</a><br>
-                <a href="">Datenschutz</a>
+                <a href=""><u>Impressum</u></a><br>
+                <a href=""><u>Datenschutz</u></a>
               </p>
             </div>
           </div>
         </div>
     </footer>
   </main>
-  <!--<div class="container">
-
-      <div class="section-paralax">
-        <img src="./assets/img/1.png" data-speed="-5" class="layer" alt="mail">
-        <img src="./assets/img/2.png" data-speed="5" class="layer" alt="mail">
-        <img src="./assets/img/3.png" data-speed="2" class="layer" alt="mail">
-        <img src="./assets/img/4.png" data-speed="6" class="layer" alt="mail">
-        <img src="./assets/img/5.png" data-speed="8" class="layer" alt="mail">
-        <img src="./assets/img/6.png" data-speed="-2" class="layer" alt="mail">
-        <img src="./assets/img/7.png" data-speed="4" class="layer" alt="mail">
-        <img src="./assets/img/8.png" data-speed="-9" class="layer" alt="mail">
-        <img src="./assets/img/9.png" data-speed="5" class="layer" alt="mail">
-
-
-        <div class="header-content container-fluid mt-5 pt-5 pb-5">
-
-
-          <div class="header-content__heading">
-            <h1 id="typewriter">
-            <span class="title-padding">Mail forwarding from </span><span class="title-accent__primary">Delaware.</span>
-            <span class="d-block pb-5"></span>
-            Mail<span class="title-accent__primary"> forwarding </span>from Delaware. </h1></div>
-
-
-        <div class="header-content__description row justify-content-center mt-5">
-          <div class="col-xl-3 col-lg-4 offset-xl-4 offset-lg-6 col-md-5 offset-md-6 col-sm-8 pr-xl-5">
-            <p>Save your money - get the shipping address in sales free tax state.</p>
-            <button class="header-content__btn" type="button">Start saving </button>
-          </div>
-        </div>
-
-
-      </div>
-
-
-
-
-    </div>
-
-
-
-        <div class="justify-content-end">
-          <ul class="navbar-nav social-menu__scroll">
-            <li class="social-menu__item">
-              <a class="social-menu__link" href="#">Scroll to navigate <i class="fas fa-angle-down"></i></a>
-            </li>
-          </ul>
-
-        </div>
-      </div>
-    </div>
-
-  </div>
-</header>
-
-
-<main class="container-fluid">
-  <div class="wrapper">
-    <section class="container-fluid section-content__home">
-      <h2 class="wow animated fadeInUp">Deposithub <span class="title-accent__primary">LLC</span></h2>
-
-      <div class="row justify-content-around benefits-container">
-
-          <div class="col-lg-3 col-md-6 col-sm-12 text-center benefit mb-3 wow animated fadeInUp" data-wow-delay="0.5s">
-            <a href="#" class="benefit__link">
-              <p class="benefit__title"><sup>01</sup>SHOPPER</p>
-              <p class="benefit__description">Get the physical address in sales free tax state and start saving.
-                Ship you packages to your sales tax free address. You’ll pay only $1.99 per package.</p>
-            </a>
-          </div>
-
-
-
-          <div class="col-lg-3 col-md-6 col-sm-12 text-center benefit mb-3 wow animated fadeInUp" data-wow-delay="0.6s">
-            <a href="#" class="benefit__link">
-              <p class="benefit__title"><sup>02</sup>VENDOR</p>
-              <p class="benefit__description">We providing storage for your merchandise 20 cubic feet only for $5 a month
-                and will ship your package only for 0.50c plus shipping  service fee if any.</p>
-            </a>
-          </div>
-
-
-
-          <div class="col-lg-3 col-md-6 col-sm-12 text-center benefit mb-3 wow animated fadeInUp" data-wow-delay="0.7s">
-            <a href="#" class="benefit__link">
-              <p class="benefit__title"><sup>03</sup>PAPER MAIL ONLY</p>
-              <p class="benefit__description">Get your physical address for your business or any paper mail (magazines,
-                letters etc) we will scan, download, forward, keep or destroy it) not more than 30 letters per </p>
-            </a>
-          </div>
-
-      </div>
-
-      <div class="row">
-        <div class="col text-center" data-wow-delay="0.8s">
-          <button type="button" class="btn-calc" data-toggle="modal" data-target="#CalcModal">Benefit calculator</button>
-
-
-
-          <div class="modal fade" id="CalcModal" tabindex="-1" aria-labelledby="CalcModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content"  id="CalcModalLabel">
-                <div class="calc-body">
-                  <div class="modal-header">
-                    <h5 class="modal-title modal-title--dark">Benefit calculator</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                    <ul class="modal-sort">
-                      <li class="modal-sort__item">
-                        Start date
-                      </li>
-                      <li class="modal-sort__item">
-                        <a class="modal-sort__link" href="#">oct <i class="fas fa-chevron-down"></i></a>
-                      </li>
-                      <li class="modal-sort__item">
-                        <a class="modal-sort__link" href="#">2021 <i class="fas fa-chevron-down"></i></a>
-                      </li>
-                    </ul>
-
-                  </div>
-
-                  <div class="modal-body">
-
-                    <form>
-                      <div class="form-group">
-                        <div class="calc-range">
-
-                          <input type="range" name="rangeInput" class="calc-range-input" min="10" max="3000" onchange="updateTextInput(this.value);">
-                          <div class="calc-range-value-input">
-                            <input type="text" id="textInput" class="calc-range-value" value="1250"><span class="calc-range-currency">$</span>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="check1" name="check1" checked>
-                        <label class="form-check-label" for="check1">
-                          I want to do business
-                        </label>
-                      </div>
-
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="check2" name="check2">
-                        <label class="form-check-label" for="check2">
-                          For private purposes
-                        </label>
-                      </div>
-
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="check3" name="check3">
-                        <label class="form-check-label" for="check3">
-                          Long-term storage
-                        </label>
-                      </div>
-
-                      <div class="text-left">
-                        <button type="submit" class="btn calc-btn__more">More details</button>
-                      </div>
-                    </form>
-
-                  </div>
-                </div>
-
-                <div class="calc-right-sidebar">
-                  <div class="modal-header">
-                    <h5 class="modal-title modal-title--light">Benefit calculator</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body modal-sidebar text-left">
-                    <div class="modal-body-sidebar__item">
-                      <i class="fas fa-chart-pie"></i>
-                      Saved over 100,000
-                    </div>
-
-                    <div class="modal-body-sidebar__item">
-                      <i class="fas fa-wallet"></i>
-                      Accepted and sent goods for 1,000,000
-                    </div>
-
-                    <div class="modal-body-sidebar__item">
-                      <i class="fas fa-percent"></i>
-                      Gave 40,000 discounts
-                    </div>
-
-                    <div class="modal-body-sidebar__item">
-                      <i class="fas fa-calendar-alt"></i>
-                      We have been working for 180 days
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="container-fluid section-content__home">
-      <h2>Why  <span class="title-accent__primary">deposithub</span></h2>
-
-      <div class="row justify-content-between features-container">
-        <div class="col-lg-2 col-md-6 col-sm-12 text-center wow animated fadeInUp" data-wow-delay="0.1s">
-          <img src="./assets/img/waranty.png" alt="Waranty" class="feature__icon">
-          <p class="feature__title">Warranty</p>
-          <p class="features__description">6-month warranty for our code</p>
-        </div>
-
-        <div class="col-lg-2 col-md-6 col-sm-12 text-center wow animated fadeInUp" data-wow-delay="0.3s">
-          <img src="./assets/img/waranty.png" alt="Waranty" class="feature__icon">
-          <p class="feature__title">Warranty</p>
-          <p class="features__description">6-month warranty for our code</p>
-        </div>
-
-        <div class="col-lg-2 col-md-6 col-sm-12 text-center wow animated fadeInUp" data-wow-delay="0.4s">
-          <img src="./assets/img/waranty.png" alt="Waranty" class="feature__icon">
-          <p class="feature__title">Warranty</p>
-          <p class="features__description">6-month warranty for our code</p>
-        </div>
-
-        <div class="col-lg-2 col-md-6 col-sm-12 text-center wow animated fadeInUp" data-wow-delay="0.45s">
-          <img src="./assets/img/waranty.png" alt="Waranty" class="feature__icon">
-          <p class="feature__title">Warranty</p>
-          <p class="features__description">6-month warranty for our code</p>
-        </div>
-      </div>
-
-    </section>
-
-
-    <section class="container-fluid section-content__home">
-
-      <div class="row justify-content-between about-container">
-        <div class="col-lg-4 col-md-12 offset-1 wow animated bounceIn" data-wow-delay="0.3s">
-          <h3 class="about__title">About services</h3>
-          <div class="about__description">
-            <p>We regularly audit our environments to fine tune the safety of our systems and yours.</p>
-            <p>We make every effort to follow uncompromising compliance frameworks’ procedures in technology and business operations?</p>
-            <p>We take advantage of premium-class virtual machines and the world’s most trusted AWS Cloud solutions</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-12 offset-1 wow animated bounceIn" data-wow-delay="0.3s">
-          <h3 class="about__title">Competitive pricing</h3>
-          <div class="about__description">
-            <p>We are a postal company that deals with storing and transporting mail. A feature of our company is an online system in which you can manage without leaving your home.</p>
-            <p>We are registered in the USA and have an official license to operate. We have official contracts with warehouses and inspection bodies.</p>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <section class="container-fluid section-content__home">
-
-      <div class="row justify-content-between customization-container">
-        <div class="col-lg-5 col-md-12">
-          <h3 class="customization__title">Platform Customization <span class="title-accent">and Integration</span></h3>
-          <div class="customization__description">
-            <p>Merge and manage all your mail and tools conveniently from one, single interface.</p>
-            <p>DepositHub provides individual email management and takes care of storing, safe and transporting items, creating tools specially adapted to your purpose. Interleaving payment processors, delivery service providers, social media, ERP systems, productivity tools, analytics and many more.</p>
-            <ul class="customization__list">
-              <li class="customization__item">Use as virtual storage</li>
-              <li class="customization__item">Use product management as a tool</li>
-              <li class="customization__item">Use as a business tool</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-lg-6 col-md-12">
-          <img src="./assets/img/smartphone.png" alt="smartphone" class="customization__image wow animated zoomIn" data-wow-delay="0.3s">
-        </div>
-      </div>
-
-    </section>
-
-
-    <section class="container-fluid section-content__home">
-
-      <div class="row justify-content-between summary-container">
-        <div class="col">
-          <h3 class="summary__title">Deposithub LLC <span class="title-accent">in numbers</span></h3>
-          <div class="summary__description">
-            <p>Don't just take out word for it</p>
-          </div>
-          <div class="row summary-desc">
-            <div class="card card-summary col-lg-4 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.15s">
-              <div class="card-body">
-                <h5 class="card-title summary-desc__card-title">60+</h5>
-                <p class="card-text">any text any test any text</p>
-              </div>
-            </div>
-            <div class="card card-summary col-lg-4 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.13s">
-              <div class="card-body">
-                <h5 class="card-title summary-desc__card-title">9000+</h5>
-                <p class="card-text">any text any test any text</p>
-              </div>
-            </div>
-            <div class="card card-summary col-lg-4 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.1s">
-              <div class="card-body">
-                <h5 class="card-title summary-desc__card-title">40+</h5>
-                <p class="card-text">any text any test any text</p>
-              </div>
-            </div>
-
-            <div class="card card-summary col-lg-4 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.1s">
-              <div class="card-body">
-                <h5 class="card-title summary-desc__card-title">100+</h5>
-                <p class="card-text">any text any test any text</p>
-              </div>
-            </div>
-            <div class="card card-summary col-lg-4 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.13s">
-              <div class="card-body">
-                <h5 class="card-title summary-desc__card-title">20+</h5>
-                <p class="card-text">any text any test any text</p>
-              </div>
-            </div>
-            <div class="card card-summary col-lg-4 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.15s">
-              <div class="card-body">
-                <h5 class="card-title summary-desc__card-title">50+</h5>
-                <p class="card-text">any text any test any text</p>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <section class="container-fluid section-content__home section-summary__bg">
-
-      <div class="row justify-content-between summary-container">
-        <div class="col">
-          <h3 class="summary__title">Project management & <span class="title-accent">product ownership</span></h3>
-          <div class="row summary-desc">
-
-            <div class="col-xl-7 col-lg-12 col-sm-12">
-              <div class="text-left">
-                <p>A key link between you and your team is your project manager. They will translate your needs and wants into clear tech tasks, coordinate all aspects of your project from start to end, keeping you in control over your project progress and budget regularly at the time suitable for you.</p>
-              </div>
-            </div>
-
-
-            <div class="card col-xl-4 col-lg-6 ml-auto col-sm-12 wow animated fadeInUp" data-wow-delay="0.1s">
-              <div class="card-body card-summary__logo">
-                <img src="./assets/img/logo-gmail.png" alt="Gmail" class="card-summary__img">
-              </div>
-            </div>
-
-            <div class="card col-xl-4 col-lg-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.4s">
-              <div class="card-body card-summary__logo">
-                <img src="./assets/img/logo-amazon.png" alt="Amazon" class="card-summary__img">
-              </div>
-            </div>
-            <div class="card col-xl-4 col-lg-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.3s">
-              <div class="card-body card-summary__logo">
-                <img src="./assets/img/logo-google-cloud.jpg" alt="Google Cloud" class="card-summary__img">
-              </div>
-            </div>
-            <div class="card col-xl-4 col-lg-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.2s">
-              <div class="card-body card-summary__logo">
-                <img src="./assets/img/logo-postal-service.jpg" alt="Postal Service" class="card-summary__img">
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <section class="container-fluid section-content__home">
-
-      <div class="row justify-content-between summary-container">
-        <div class="col">
-          <h2>We in <span class="title-accent__primary">numbers</span></h2>
-          <div class="row summary-desc text-left">
-
-
-            <div class="card col-xl-4 col-lg-6 col-sm-12 card__rating wow animated fadeInUp" data-wow-delay="0.3s">
-              <div class="card-body card-summary">
-                <div>
-                  <p><u>Rewiews Deposithub</u></p>
-                  <div class="rating-area">
-                    <input type="radio" id="star-5" name="rating" value="5">
-                    <label for="star-5" title="«5»"></label>
-                    <input type="radio" id="star-4" name="rating" value="4">
-                    <label for="star-4" title="«4»"></label>
-                    <input type="radio" id="star-3" name="rating" value="3">
-                    <label for="star-3" title="«3»"></label>
-                    <input type="radio" id="star-2" name="rating" value="2">
-                    <label for="star-2" title="«2»"></label>
-                    <input type="radio" id="star-1" name="rating" value="1">
-                    <label for="star-1" title="«1»"></label>
-                  </div>
-                </div>
-                <img src="./assets/img/google-logo.png" alt="Google" class="card-summary__img">
-              </div>
-            </div>
-
-            <div class="card col-xl-4 col-lg-6 col-sm-12 card__rating wow animated fadeInUp" data-wow-delay="0.4s">
-              <div class="card-body card-summary">
-                <div>
-                  <p><u>Rewiews Deposithub</u></p>
-                  <div class="rating-area">
-                    <input type="radio" id="star-5-1" name="rating" value="5">
-                    <label for="star-5-1" title="«5»"></label>
-                    <input type="radio" id="star-4-1" name="rating" value="4">
-                    <label for="star-4-1" title="«4»"></label>
-                    <input type="radio" id="star-3-1" name="rating" value="3">
-                    <label for="star-3-1" title="«3»"></label>
-                    <input type="radio" id="star-2-1" name="rating" value="2">
-                    <label for="star-2-1" title="«2»"></label>
-                    <input type="radio" id="star-1-1" name="rating" value="1">
-                    <label for="star-1-1" title="«1»"></label>
-                  </div>
-                </div>
-                <img src="./assets/img/clutch.png" alt="Clutch" class="card-summary__img">
-              </div>
-            </div>
-
-            <div class="card col-xl-4 col-lg-6 col-sm-12 card__rating wow animated fadeInUp" data-wow-delay="0.5s">
-              <div class="card-body card-summary">
-                <div>
-                  <p><u>Rewiews Deposithub</u></p>
-                  <div class="rating-area">
-                    <input type="radio" id="star-5-2" name="rating" value="5">
-                    <label for="star-5-2" title="«5»"></label>
-                    <input type="radio" id="star-4-2" name="rating" value="4">
-                    <label for="star-4-2" title="«4»"></label>
-                    <input type="radio" id="star-3-2" name="rating" value="3">
-                    <label for="star-3-2" title="«3»"></label>
-                    <input type="radio" id="star-2-2" name="rating" value="2">
-                    <label for="star-2-2" title="«2»"></label>
-                    <input type="radio" id="star-1-2" name="rating" value="1">
-                    <label for="star-1-2" title="«1»"></label>
-                  </div>
-                </div>
-                <img src="./assets/img/upwork.png" alt="Upwork" class="card-summary__img">
-              </div>
-            </div>
-
-
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-   <section class="container-fluid section-content__home">-->
-
-  <!--      <div class="row justify-content-between summary-container">-->
-  <!--        <div class="col-12 text-center">-->
-  <!--          <h2 class="form__title">Do you have any  <span class="title-accent">questions?</span></h2>-->
-  <!--        </div>-->
-
-  <!--        <div class="col-lg-10 offset-lg-2 col-md-12">-->
-  <!--          <p class="form__description">You can ask us questions here and we will contact you shortly. To do this ? you need to fill out a form.</p>-->
-  <!--        </div>-->
-
-  <!--        <div class="col-xl-3 offset-xl-2 col-lg-6 offset-lg-2 col-md-12">-->
-  <!--          <p class="form__description">Drop us a few lines and we'll get back to you within one business day.</p>-->
-  <!--        </div>-->
-  <!--      </div>-->
-  <!--      <div class="row justify-content-between summary-container">-->
-  <!--        <div class="col-lg-8 m-auto">-->
-  <!--          <form action="#" method="post">-->
-  <!--            <div class="row">-->
-  <!--              <div class="col-lg-6 col-md-12">-->
-  <!--                <input type="text" class="form-control form__input" placeholder="Your name">-->
-  <!--              </div>-->
-  <!--              <div class="col-lg-6 col-md-12">-->
-  <!--                <input type="email" class="form-control form__input" placeholder="Your E-mail">-->
-  <!--              </div>-->
-  <!--            </div>-->
-
-  <!--            <div class="row">-->
-  <!--              <div class="col-lg-6 col-md-12">-->
-  <!--                <input type="text" class="form-control form__input" placeholder="Your Inquri:">-->
-  <!--              </div>-->
-  <!--              <div class="col-lg-6 col-md-12">-->
-  <!--                <button class="btn btn-outline-secondary btn-block form__btn" type="submit">Send message</button>-->
-  <!--              </div>-->
-  <!--            </div>-->
-
-  <!--            <div class="row">-->
-  <!--              <div class="col text-center">-->
-  <!--                <div class="form-group">-->
-  <!--                  <div class="form-check">-->
-  <!--                    <input class="form-check-input" type="radio" value="" id="invalidCheck2" required>-->
-  <!--                    <label class="form-check-label" for="invalidCheck2">-->
-  <!--                      I have read and accepted the <a href="#">Terms & conditions</a> and <a href="#">Privacy Policy</a>-->
-  <!--                    </label>-->
-  <!--                  </div>-->
-  <!--                </div>-->
-  <!--              </div>-->
-  <!--            </div>-->
-
-
-
-
-  <!--          </form>-->
-  <!--        </div>-->
-  <!--      </div>-->
-
-  <!--    </section>-->
-  <!--</div>
-
-</main>-->
-
-
-
-
-
-
   <script src="libs/jquery/dist/jquery.min.js"></script>
   <script src="libs/popper.js/dist/umd/popper.min.js"></script>
   <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
