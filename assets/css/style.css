@@ -605,8 +605,6 @@ a:hover, a:active {
 }
 
 .arrow {
-  font-size: 3.5rem;
-  margin-left: -5px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -1231,7 +1229,7 @@ video {
     margin: 0 auto;
   }
   .section-blue__btn-block {
-    padding: 39px 37px 22px 37px;
+    padding: 39px 25px 22px 35px;
   }
   .section-blue {
     padding: 32px 0 50px 0;
